@@ -1,0 +1,6 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="24" cy="24" r="21" fill="#1DA1F2" stroke="white" stroke-width="3"/>
+  <text x="24" y="30" font-family="Arial" font-size="24" font-weight="bold" fill="white" text-anchor="middle">T</text>
+  <line x1="12" y1="36" x2="36" y2="12" stroke="red" stroke-width="3" stroke-linecap="round" />
+  <circle cx="24" cy="24" r="15" fill="none" stroke="white" stroke-width="1.5" stroke-opacity="0.5"/>
+</svg> 

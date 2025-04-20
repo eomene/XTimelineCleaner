@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitter Mute Words Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Twitter Mute Words Manager</h1>
+    </div>
+    
+    <div class="tabs">
+      <button class="tab-button active" data-category="ai">AI</button>
+      <button class="tab-button" data-category="conspiracy">Conspiracy</button>
+      <button class="tab-button" data-category="crypto">Crypto</button>
+      <button class="tab-button" data-category="gaming">Gaming</button>
+      <button class="tab-button" data-category="health">Health</button>
+      <button class="tab-button" data-category="politics">Politics</button>
+      <button class="tab-button" data-category="social_issues">Social Issues</button>
+      <button class="tab-button" data-category="social_media">Social Media</button>
+      <button class="tab-button" data-category="sports">Sports</button>
+      <button class="tab-button" data-category="custom">Custom</button>
+    </div>
+    
+    <div class="tab-content">
+      <div id="ai" class="category-panel active">
+        <div class="category-controls">
+          <button class="select-all-btn">Select All</button>
+          <button class="deselect-all-btn">Deselect All</button>
+        </div>
+        <p>Mute AI-related terms and discussions.</p>
+        <div class="word-list" id="ai-list">
+          <!-- Words will be loaded from ai.json -->
+        </div>
+      </div>
+      
+      <div id="conspiracy" class="category-panel">
+        <div class="category-controls">
+          <button class="select-all-btn">Select All</button>
+          <button class="deselect-all-btn">Deselect All</button>
+        </div>
+        <p>Mute conspiracy theory terms.</p>
+        <div class="word-list" id="conspiracy-list">
+          <!-- Words will be loaded from conspiracy.json -->
+        </div>
+      </div>
+      
+      <div id="crypto" class="category-panel">
+        <div class="category-controls">
+          <button class="select-all-btn">Select All</button>
+          <button class="deselect-all-btn">Deselect All</button>
+        </div>
+        <p>Mute cryptocurrency and blockchain terms.</p>
+        <div class="word-list" id="crypto-list">
+          <!-- Words will be loaded from crypto.json -->
+        </div>
+      </div>
+      
+      <div id="gaming" class="category-panel">
+        <div class="category-controls">
+          <button class="select-all-btn">Select All</button>
+          <button class="deselect-all-btn">Deselect All</button>
+        </div>
+        <p>Mute gaming-related terms and discussions.</p>
+        <div class="word-list" id="gaming-list">
+          <!-- Words will be loaded from gaming.json -->
+        </div>
+      </div>
+      
+      <div id="health" class="category-panel">
+        <div class="category-controls">
+          <button class="select-all-btn">Select All</button>
+          <button class="deselect-all-btn">Deselect All</button>
+        </div>
+        <p>Mute health and medical terms.</p>
+        <div class="word-list" id="health-list">
+          <!-- Words will be loaded from health.json -->
+        </div>
+      </div>
+      
+      <div id="politics" class="category-panel">
+        <div class="category-controls">
+          <button class="select-all-btn">Select All</button>
+          <button class="deselect-all-btn">Deselect All</button>
+        </div>
+        <p>Mute political terms and discussions.</p>
+        <div class="word-list" id="politics-list">
+          <!-- Words will be loaded from politics.json -->
+        </div>
+      </div>
+      
+      <div id="social_issues" class="category-panel">
+        <div class="category-controls">
+          <button class="select-all-btn">Select All</button>
+          <button class="deselect-all-btn">Deselect All</button>
+        </div>
+        <p>Mute social issues and activism terms.</p>
+        <div class="word-list" id="social_issues-list">
+          <!-- Words will be loaded from social_issues.json -->
+        </div>
+      </div>
+      
+      <div id="social_media" class="category-panel">
+        <div class="category-controls">
+          <button class="select-all-btn">Select All</button>
+          <button class="deselect-all-btn">Deselect All</button>
+        </div>
+        <p>Mute social media platform discussions.</p>
+        <div class="word-list" id="social_media-list">
+          <!-- Words will be loaded from social_media.json -->
+        </div>
+      </div>
+      
+      <div id="sports" class="category-panel">
+        <div class="category-controls">
+          <button class="select-all-btn">Select All</button>
+          <button class="deselect-all-btn">Deselect All</button>
+        </div>
+        <p>Mute sports-related terms and discussions.</p>
+        <div class="word-list" id="sports-list">
+          <!-- Words will be loaded from sports.json -->
+        </div>
+      </div>
+      
+      <div id="custom" class="category-panel">
+        <div class="category-controls">
+          <button class="select-all-btn">Select All</button>
+          <button class="deselect-all-btn">Deselect All</button>
+        </div>
+        <p>Create your own list of words to mute.</p>
+        <textarea id="custom-words" placeholder="Enter words or phrases, one per line"></textarea>
+      </div>
+    </div>
+    
+    <div class="actions">
+      <button id="cleanup-button" class="primary-button">Clean Up Timeline</button>
+      <div class="status" id="status-message"></div>
+    </div>
+  </div>
+  <script src="wordLists.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html> 
