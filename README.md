@@ -59,6 +59,6 @@ MIT License
 
 If you want to contribute or customize the extension:
 
-1. The word lists are defined in `wordLists.js`
+1. The word lists are defined in `wordLists.js` and gotten from "https://github.com/eomene/XMuteList"
 2. The UI is controlled by `popup.js` and `popup.html`
 3. Twitter interaction is handled by the injection script in `popup.js` 
